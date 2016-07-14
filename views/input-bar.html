@@ -1,0 +1,28 @@
+<form ng-submit="submitProduct()">
+	
+	<div class="row">
+
+		<div class="medium-12  columns">
+			<h3>Input Form</h3>
+		</div>
+
+
+		<div class="medium-4  columns"><label for="desc">Description<input type="text" name="desc" id="desc" placeholder="Description" required /></label></div>
+
+
+		<div class="medium-4  columns"><label for="qty">Qty<input type="text" name="qty" id="qty" placeholder="Qty" required /></label></div>
+
+
+		<div class="medium-4  columns"><label for="price">Price<input type="text" name="price" id="price" placeholder="Price" required /></label></div>
+
+	</div><!-- .row -->
+    
+    <!-- button action -->
+	<div class="row">
+		<div class="medium-12  columns">
+			<button class="button" type="submit">Add to cart</button>
+			<button class="button secondary" ng-click="reset()" type="button">Cancel</button>
+		</div>
+	</div><!-- .row -->
+
+</form>

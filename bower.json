@@ -1,0 +1,31 @@
+{
+  "name": "pos",
+  "authors": [
+    "Yudhi Satrio <isatrio.is.me@gmail.com>"
+  ],
+  "description": "Mini pos no database",
+  "main": "index.html",
+  "keywords": [
+    "pos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation": "^5.5.3",
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-cookies": "^1.5.7",
+    "angular-resource": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-touch": "^1.5.7",
+    "angular-sanitize": "^1.5.7",
+    "underscore": "^1.8.3"
+  }
+}

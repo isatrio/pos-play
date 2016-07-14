@@ -1,0 +1,57 @@
+
+<!-- Main Block -->
+<main class="main" role="main">
+	
+	<div class="row">
+		
+		<div class="medium-12  columns">
+
+			<h3>Cart</h3>
+			
+			<table>
+
+				<thead>
+					<tr>
+						<th>No.</th>
+						<th>Description</th>
+						<th>Qty</th>
+						<th>Price</th>
+						<th>Total Price</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					
+					<!-- Show all products -->
+					<tr ng-repeat="(key, product) in products">
+						<td>{{ key+1 }}</td>
+						<td><p>{{ product.desc }}</p><button class="button  small" ng-click="remove(product)">Remove</button></td>
+						<td class="number">{{ product.qty }}</td>
+						<td class="number">IDR {{ product.price }}</td>
+                        <td class="number">IDR {{ product.qty*product.price }}</td>
+					</tr>
+
+				</tbody>
+
+
+				<tfoot>
+				    
+                    <tr>
+                        <td colspan="4">Tax 10%</td>
+                        <td class="number">IDR {{ tax }}</td>
+                    </tr>
+					<tr>
+						<td colspan="4">Total</td>
+						<td class="number">IDR {{ total }}</td>
+					</tr>
+
+				</tfoot>
+				
+			</table><!-- table -->
+
+		</div><!-- .columns -->
+
+	</div><!-- .row -->
+
+</main><!-- main -->
